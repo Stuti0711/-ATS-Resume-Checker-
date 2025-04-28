@@ -291,6 +291,13 @@ if submit:
                 clean_title = section_title.strip()
                 clean_content = content.strip()
                 sections_data[clean_title] = clean_content
+            sections_data = {}
+            for section_title, content in matches:
+                clean_title = section_title.strip()
+                clean_content = content.strip()
+                if clean_title.upper() == "PERCENTAGE MATCH":
+                    clean_content = clean_content.replace('*', '').strip()
+                sections_data[clean_title] = clean_content
             
             # Display each section with proper formatting
             for api_section, display_name in section_mapping.items():
