@@ -235,8 +235,9 @@ if submit:
             
             Provide analysis in the following structure, with ONLY these exact 9 sections:
             
-            PERCENTAGE MATCH: Provide a single percentage score (e.g., 75%) representing how well the resume matches the job description.
             
+            PERCENTAGE MATCH: Only output a single numeric percentage score (e.g., "75%") on a single line. Do not write any extra sentences. Only the number and % symbol.
+
             MISSING & WEAK KEYWORDS: List specific industry keywords that are missing or underrepresented in the resume.
             
             SKILLS ALIGNMENT: Categorize and analyze alignment of Technical Skills, Soft Skills, and Tools & Technologies.
