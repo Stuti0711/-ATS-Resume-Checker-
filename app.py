@@ -152,6 +152,7 @@ def input_pdf_text(uploaded_file):
 def display_match_score(score_text):
     """Display the match score with appropriate color coding"""
     try:
+        score_text = score_text.replace('*', '').strip()
         score = int(score_text.strip('%'))
         if score >= 80:
             color = "success"
